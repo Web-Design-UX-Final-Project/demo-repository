@@ -3,19 +3,24 @@ Purpose of website: Our stock trading website, crafted with HTML, CSS, and JavaS
 
 Bootstrap components
 
-1. Navbar (<nav class="navbar navbar-expand-lg navbar-light bg-light">) - for the navigation bar at the top.
-2. Navbar Brand (<a class="navbar-brand" href="#">) - for the brand/logo in the navbar.
-3. Navbar Toggler (<button class="navbar-toggler" ...>) - for the toggle button in collapsed navbar.
-4. Collapse (<div class="collapse navbar-collapse" ...>) - for collapsible navbar content.
-5. Nav Item (<li class="nav-item">) - for each item in the navbar menu.
-6. Jumbotron (<div class="jumbotron jumbotron-fluid">) - for the large introductory content.
-7. Card (<div class="card">) - for displaying content cards.
-8. Card Header (<div class="card-header">) - for card headers.
-9. Card Body (<div class="card-body">) - for card bodies.
-10. Image (<img src="..." class="img-fluid" alt="...">) - for responsive images.
-11. Container (<div class="container">) - for creating a responsive fixed-width container.
-12. Row (<div class="row">) - for arranging columns horizontally.
-13. Column (<div class="col-12">, <div class="col-md-4">, etc.) - for defining the layout grid.
-14. Text Alignment (<h1 class="display-4">, <p class="lead">, etc.) - for styling text alignment.
-15. List Unstyled (<ul class="list-unstyled">) - for unordered lists without any styles.
-16. Footer (<footer class="footer bg-dark text-white pt-4 pb-2">) - for the footer section.
+1. Container (<div class="container">) - Defines a fixed-width container that centralizes and confines layout content within a specified width, ensuring consistency across screen sizes.
+2. Text Alignment (<h1 class="display-4">, <p class="lead">, etc.) - Used to style text alignment, providing a structured layout for organizing content, such as primary headings (<h1 class="display-4">) and paragraphs (<p class="lead">).
+3. Form (<form>) - Represents a form for collecting user input, facilitating data entry for login credentials or registration information.
+4. Form Label - Labels (<label>) associate text with form elements, providing context and guidance for users, ensuring clarity in input fields.
+5. Text Input, Password Input, Email Input - Input fields where users can enter text, passwords, or email addresses, respectively, serving the purpose of collecting user input for various form fields.
+6. Submit Button - A button (<button type="submit">) that submits form data to the server for processing, enabling users to complete form submissions.
+7. Error Message Container - A container (<div>) used to display error messages, providing feedback to users on issues with their input, enhancing user experience by aiding error correction.
+8. Navbar (<nav class="navbar navbar-expand-lg navbar-light bg-light">) - The navigation bar at the top, facilitating navigation and accessibility across the website.
+9. Navbar Brand (<a class="navbar-brand" href="#">) - The brand/logo within the navbar, prominently displaying the website identity.
+10. Navbar Toggler (<button class="navbar-toggler" ...>) - The toggle button in a collapsed navbar, enabling navigation options on smaller screens.
+11. Collapse (<div class="collapse navbar-collapse" ...>) - A collapsible container for navbar content, optimizing space and enhancing usability on smaller devices.
+12. Nav Item (<li class="nav-item">) - Represents each item in the navbar menu, allowing users to navigate to different sections or pages of the website.
+13. Jumbotron (<div class="jumbotron jumbotron-fluid">) - A large introductory content container, highlighting key information or messages to users.
+14. Card (<div class="card">) - A container for displaying content cards, organizing information in a visually appealing manner.
+15. Card Header (<div class="card-header">) - The header section of a card, providing context or a title for the card content.
+16. Card Body (<div class="card-body">) - The main content area of a card, presenting detailed information or features.
+17. Image (<img src="..." class="img-fluid" alt="...">) - An HTML image element for responsive images, ensuring proper scaling and display across devices.
+18. Row (<div class="row">) - A container for arranging columns horizontally, facilitating grid-based layout design.
+19. Column (<div class="col-12">, <div class="col-md-4">, etc.) - Defines the layout grid within a row, specifying the width and positioning of content columns.
+20. List Unstyled (<ul class="list-unstyled">) - Defines an unordered list without any styles applied, offering a clean and minimalist presentation for lists.
+21. Footer (<footer class="footer bg-dark text-white pt-4 pb-2">) - The footer section of the website, containing additional information, navigation links, or copyright notices.
