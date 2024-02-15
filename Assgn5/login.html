@@ -4,46 +4,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login Page</title>
-  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="login.css">
 </head>
 <body>
-  <h1 class="app-name">Stockify</h1>
-  <p class="tagline">Simplifying Investing, Amplifying Returns</p>
-  <div class="login-container">
-    <h2>Login</h2>
-    <form id="login-form">
-      <div class="form-group">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
+  <div class="container">
+    <h1 class="app-name text-center mt-5">Stockify</h1>
+    <p class="tagline text-center">Simplifying Investing, Amplifying Returns</p>
+    <div class="login-container">
+      <h2 class="text-center">Login</h2>
+      <form id="login-form">
+        <div class="mb-3">
+          <label for="username" class="form-label">Username:</label>
+          <input type="text" class="form-control form-control-sm" id="username" name="username" required>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password:</label>
+          <input type="password" class="form-control form-control-sm" id="password" name="password" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+      </form>
+      <div id="error-message" class="error-message text-danger mt-3"></div>
+      <div class="signup-link text-center mt-3">
+        Don't have an account? <a href="#" id="signup-link">Sign up</a>
       </div>
-      <div class="form-group">
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-      </div>
-      <button type="submit">Login</button>
-    </form>
-    <div id="error-message" class="error-message"></div>
-    <div class="signup-link">
-      Don't have an account? <a href="#" id="signup-link">Sign up</a>
+    </div>
+    
+    <div class="signup-container" style="display:none;">
+      <h2 class="text-center">Sign Up</h2>
+      <form id="signup-form">
+        <div class="mb-3">
+            <label for="new-firstname" class="form-label">First Name:</label>
+            <input type="text" class="form-control form-control-sm" id="new-firstname" name="new-firstname" maxlength="10" required>
+        </div>
+        <div class="mb-3">
+            <label for="new-lastname" class="form-label">Last Name:</label>
+            <input type="text" class="form-control form-control-sm" id="new-lastname" name="new-lastname" maxlength="10" required>
+        </div>
+        <div class="mb-3">
+          <label for="new-email" class="form-label">Email:</label>
+          <input type="email" class="form-control form-control-sm" id="new-email" name="new-email" required>
+        </div>
+        <div class="mb-3">
+          <label for="new-username" class="form-label">New Username:</label>
+          <input type="text" class="form-control form-control-sm" id="new-username" name="new-username" maxlength="10" required>
+        </div>
+        <div class="mb-3">
+          <label for="new-password" class="form-label">New Password:</label>
+          <input type="password" class="form-control form-control-sm" id="new-password" name="new-password" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+      </form>
+      <div id="signup-error-message" class="error-message text-danger mt-3"></div>
     </div>
   </div>
-  
-  <div class="signup-container" style="display:none;">
-    <h2>Sign Up</h2>
-    <form id="signup-form">
-      <div class="form-group">
-        <label for="new-username">New Username:</label>
-        <input type="text" id="new-username" name="new-username" required>
-      </div>
-      <div class="form-group">
-        <label for="new-password">New Password:</label>
-        <input type="password" id="new-password" name="new-password" required>
-      </div>
-      <button type="submit">Sign Up</button>
-    </form>
-    <div id="signup-error-message" class="error-message"></div>
-  </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
