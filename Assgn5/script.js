@@ -1,3 +1,4 @@
+
 // Store initial credentials for demonstration purposes
 var initialUsername = 'user';
 var initialPassword = 'password';
@@ -31,13 +32,70 @@ document.getElementById('signup-form').addEventListener('submit', function(event
   event.preventDefault();
   
   // Get values from the signup form
-  var newUsername = document.getElementById('new-username').value;
+  var newFirstName = document.getElementById('new-firstname').value.trim();
+  var newLastName = document.getElementById('new-lastname').value.trim();
+  var newEmail = document.getElementById('new-email').value.trim();
+  var newUsername = document.getElementById('new-username').value.trim();
   var newPassword = document.getElementById('new-password').value;
+
+  // Validate first name
+  if (newFirstName.length === 0) {
+    document.getElementById('signup-error-message').innerText = 'Please enter your first name.';
+    return;
+  }
+
+  // Validate last name
+  if (newLastName.length === 0) {
+    document.getElementById('signup-error-message').innerText = 'Please enter your last name.';
+    return;
+  }
+
+  // Validate username
+  if (newUsername.length === 0) {
+    document.getElementById('signup-error-message').innerText = 'Please enter a username.';
+    return;
+  }
+
+  // Check if first name contains numbers or special characters
+  if (!/^[a-zA-Z]+$/.test(newFirstName)) {
+    document.getElementById('signup-error-message').innerText = 'First name must only contain letters.';
+    return;
+  }
+
+  // Check if last name contains numbers or special characters
+  if (!/^[a-zA-Z]+$/.test(newLastName)) {
+    document.getElementById('signup-error-message').innerText = 'Last name must only contain letters.';
+    return;
+  }
+
+  // Check if first name contains spaces
+  if (/\s/.test(newFirstName)) {
+    document.getElementById('signup-error-message').innerText = 'First name must not contain spaces.';
+    return;
+  }
+
+  // Check if last name contains spaces
+  if (/\s/.test(newLastName)) {
+    document.getElementById('signup-error-message').innerText = 'Last name must not contain spaces.';
+    return;
+  }
+
+  // Validate username
+  if (newUsername.includes(' ')) {
+    document.getElementById('signup-error-message').innerText = 'Username must not contain spaces.';
+    return;
+  }
 
   // Validate the password
   var passwordRegex = /^(?=.*[A-Z])(?=.*[!@#$%^&*()_+])[A-Za-z\d!@#$%^&*()_+]{5,}$/; // At least 5 characters, one capital letter, and one special character
   if (!passwordRegex.test(newPassword)) {
     document.getElementById('signup-error-message').innerText = 'Password must be at least 5 characters long, contain at least one capital letter, and one special character (!@#$%^&*()_+).';
+    return;
+  }
+
+  // Validate email
+  if (!newEmail.includes('@')) {
+    document.getElementById('signup-error-message').innerText = 'Invalid email address.';
     return;
   }
   
