@@ -12,7 +12,18 @@
     text-align: center;
   }
 
+  .hyperlink{
+    color: inherit; /* Inherit color from parent element */
+    text-decoration: underline; /* Add underline to indicate hyperlink */
+    transition: color 0.3s;
+  }
 
+
+  .hyperlink:hover{
+    transform: scale(1.2); /* Enlarge the text on hover */
+    color: #007bff; /* Change color on hover */
+    text-decoration: none; /* Remove underline on hover */
+  }
 
 
 
