@@ -1,0 +1,213 @@
+.navbar-brand img {
+    max-height: 50px;
+  }
+
+ 
+
+  .jumbotron {
+    background-image: url('giphy\ \(2\).gif');
+    background-size: 500px ;
+    color: #ffffff;
+    text-align: center;
+  }
+
+
+
+
+
+
+
+/* Stock Performance CSS */
+.card {
+    margin-bottom: 20px; /* Space below each card */
+  }
+  
+  .card-header {
+    background-color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  /* Latest News CSS */
+  .news-item img {
+    width: 100%; /* Ensure thumbnail images are responsive */
+    height: auto;
+    margin-bottom: 15px; /* Space below each thumbnail */
+  }
+  
+  .news-item h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .news-item p {
+    font-size: 14px;
+  }
+
+
+
+
+/* Trending Stocks CSS */
+.trending-stocks {
+    padding: 20px;
+    background-color: #f8f9fa; /* Light gray background */
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .trending-title {
+    margin-bottom: 15px;
+    color: #333; /* Dark text for the title */
+    font-size: 24px;
+  }
+
+
+
+
+.stock-item {
+    padding: 15px;
+    background-color: #fff; /* White background for each stock item */
+    border: 1px solid #ddd; /* Light border for each stock item */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .stock-item h3 {
+    margin-top: 0;
+    color: #333; /* Dark text for stock symbol */
+    font-size: 18px;
+  }
+  
+  .stock-item p {
+    margin: 5px 0;
+    color: #666; /* Medium darkness for text */
+    font-size: 14px;
+  }
+  
+  .stock-change {
+    font-weight: bold;
+  }
+  
+  .stock-change.up {
+    color: #28a745; /* Green color for positive changes */
+  }
+  
+  .stock-change.down {
+    color: #dc3545; /* Red color for negative changes */
+  }
+  
+  .stock-item:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Shadow effect on hover */
+  }
+  
+  
+  /* Responsive design for smaller devices */
+  @media (max-width: 767px) {
+    .news-item h5, .stock-item h3 {
+      font-size: 16px;
+    }
+  
+    .news-item p, .stock-item p {
+      font-size: 12px;
+    }
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Styles */
+.footer {
+    background-color: #000;
+    color: #fff;
+}
+
+.footer ul {
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.footer li {
+    padding: 5px 0;
+}
+
+.footer a.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer a img {
+    height: 30px; /* Set this to the desired size */
+    width: auto;
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .footer .col-md-3, .footer .col-md-6 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .footer .col-md-3 ul, .footer .col-md-6 ul {
+        display: inline-block;
+    }
+
+    .footer .col-md-3 text-right, .footer .col-md-6 text-center {
+        text-align: center;
+    }
+}
+
+/* Ensure the container takes full width */
+.footer .container {
+    width: 100%;
+    max-width: none;
+}
+
+/* Reset padding for the list */
+.footer ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Style for the list items */
+.footer li {
+    line-height: 2.5;
+    font-size: 0.9rem;
+}
+
+/* Media query adjustments for responsiveness */
+@media screen and (max-width: 992px) {
+    .footer .col-md-3, .footer .col-md-6 {
+        text-align: left;
+    }
+    .footer .col-md-3 text-right, .footer .col-md-6 text-center {
+        text-align: left;
+    }
+}
+
+
+
+
+
