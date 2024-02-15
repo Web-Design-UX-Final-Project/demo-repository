@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #fdcaff;
+  background-color: #fdfdfd;
   margin: 0;
   padding: 0;
   display: flex;
@@ -13,35 +13,32 @@ body {
   font-size: 2rem;
   font-weight: bold;
   color: #333;
-  text-align: center;
-  margin: 20px auto; /* Center the name horizontally */
-  position: absolute; /* Set absolute positioning */
-  top: 10px; /* Align to the top of the body */
-  left: 0; /* Align to the left of the body */
-  right: 0; /* Align to the right of the body */
 }
 
 .tagline {
   font-size: 1rem;
-  color: #d8d8d8;
-  margin-bottom: 30px;
-  text-align: center;
-  margin: 20px auto; /* Center the name horizontally */
-  position: absolute; /* Set absolute positioning */
-  top: 45px; /* Align to the top of the body */
-  left: 0; /* Align to the left of the body */
-  right: 0; /* Align to the right of the body */
+  color: #5a5959;
 }
 
-
-.login-container,
-.signup-container {
+.login-container {
   background-color: #fff;
-  padding: 20px;
+  padding: 40px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 300px;
+  width: 400px; /* Adjust the width as needed */
+  margin: auto; /* Center the container horizontally */
   text-align: center;
+}
+
+.signup-container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px; /* Adjust the width as needed */
+  margin: auto; /* Center the container horizontally */
+  text-align: center;
+  display: none;
 }
 
 .form-group {
@@ -64,8 +61,8 @@ input[type="password"] {
 
 button[type="submit"] {
   width: 100%;
-  background-color: #f33ee1;
-  color: #fff;
+  background-color: #5656f9;
+  color: #fbfbfb;
   padding: 10px 20px;
   border: none;
   border-radius: 3px;
@@ -86,7 +83,7 @@ button[type="submit"]:hover {
 }
 
 .signup-link a {
-  color: #ff6ceb;
+  color: #716cff;
   text-decoration: none;
 }
 
@@ -101,4 +98,17 @@ button[type="submit"]:hover {
     width: 90%;
     max-width: 400px;
   }
+}
+
+/* Custom CSS to make input boxes smaller */
+.form-control.form-control-sm {
+  width: 100%; /* Adjust the width as needed */
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+/* Adjust smaller width for signup form inputs */
+.signup-container .form-control {
+  width: 100%; /* Adjust the width as needed */
 }
