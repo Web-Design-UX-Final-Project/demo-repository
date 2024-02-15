@@ -1,4 +1,6 @@
 
+Purpose of website: Our stock trading website, crafted with HTML, CSS, and JavaScript, offers investors a comprehensive platform for informed decision-making in financial markets. Through real-time market data updates, secure trading features, customizable watchlists, educational resources, and responsive design, users can seamlessly access stock prices, execute trades, monitor portfolios, learn trading strategies, and engage with the platform across various devices. Our commitment to intuitive user interface design and powerful backend functionality ensures a seamless trading experience, empowering investors to navigate the complexities of financial markets with confidence and agility.
+
 Bootstrap components
 
 1. Navbar (<nav class="navbar navbar-expand-lg navbar-light bg-light">) - for the navigation bar at the top.
