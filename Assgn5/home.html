@@ -12,7 +12,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-          <a class="navbar-brand" href="#"><img src="Stockify.jpg" alt="Stock Market Website"></a>
+          <a class="navbar-brand" href="home.html"><img src="Stockify.jpg" alt="Stock Market Website"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -22,16 +22,14 @@
                 <a class="nav-link" href="home.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Stocks</a>
+                <a class="nav-link" href="#stocks_section">Stocks</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">News</a>
+                <a class="nav-link" href="#news_section">News</a>
               </li>
+             
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact_section">Contact</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="login.html">Login/Signup</a>
@@ -69,7 +67,9 @@
 
 
 <!-- Latest News Section -->
-<div class="container">
+<section id="news_section">
+
+  <div class="container">
     <div class="row mb-4">
       <div class="col-12">
         <div class="card">
@@ -82,7 +82,7 @@
               <div class="col-md-4">
                 <div class="news-item">
                   <img src="News 1.jpg" class="img-fluid mb-2" alt="News Thumbnail">
-                  <h5>Warren Buffett’s Berkshire Hathaway Trims Its Massive Stake in Apple</h5>
+                  <h5><a href="#" class="hyperlink">Warren Buffett’s Berkshire Hathaway Trims Its Massive Stake in Apple</a></h5>
                   <p>Berkshire sold about 1% of its Apple shares in the final three months of 2023, leaving it with a 5.9% stake in the iPhone maker worth about $167 billion on Wednesday, according to Dow Jones Market Data..</p>
                 </div>
               </div>
@@ -90,7 +90,7 @@
               <div class="col-md-4">
                 <div class="news-item">
                   <img src="news 2.jpg" class="img-fluid mb-2" alt="News Thumbnail">
-                  <h5>KKR to Acquire a Stake in Cotiviti From Veritas Capital</h5>
+                  <h5><a href="#" class="hyperlink">KKR to Acquire a Stake in Cotiviti From Veritas Capital</a></h5>
                   <p>KKR & Co. has agreed to acquire a stake in Cotiviti from private-equity manager Veritas Capital in a deal valuing the healthcare-technology business at around $11 billion..</p>
                 </div>
               </div>
@@ -98,7 +98,7 @@
               <div class="col-md-4">
                 <div class="news-item">
                   <img src="news 3.jpg" class="img-fluid mb-2" alt="News Thumbnail">
-                  <h5>Stock market's sell-off still showed some signs of strength</h5>
+                  <h5><a href="#" class="hyperlink">Stock market's sell-off still showed some signs of strength</a></h5>
                   <p>Stocks had one of their worst days of 2024 on Tuesday as a hotter-than-expected inflation report spooked investors.
   
                   </p>
@@ -110,106 +110,113 @@
       </div>
     </div>
   </div>
+</section>
+
 
   
 
 
 <!-- Trending Stocks Section -->
-<div class="container">
-  <div class="row mb-4">
-      <div class="col-12">
-          <h2 class="trending-title">Trending Stocks</h2>
-          <!-- First Row -->
-          <div class="row">
-              <div class="col-md-3 col-sm-6">
-                  <div class="stock-item">
-                      <h3>Bitcoin USD</h3>
-                      <p>Bitcoin (BTC) is a cryptocurrency launched in 2010. Users are able to generate BTC through the process of mining. Bitcoin has a current supply of 19,628,425. The last known price of Bitcoin is 52,253.09670138 USD and is up 1.20 over the last 24 hours. It is currently trading on 10818 active market(s) with $39,651,161,335.28 traded over the last 24 hours.</p>
-                      <p>$52221.00 <span class="stock-change up">+607.80 (+1.18%)</span></p>
-                  </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                  <div class="stock-item">
-                      <h3>AMAZON</h3>
-                      <p>Amazon (AMZN), a powerhouse on NASDAQ, leads in e-commerce, cloud services, and media. Its market cap fluctuates, driven by stock price changes and shares outstanding. Revenue sources include e-commerce sales, AWS, subscriptions like Amazon Prime, and advertising. Quarterly reports track key metrics like revenue growth, AWS expansion, Prime memberships, and margins.</p>
-                      <p>$739.00 <span class="stock-change up">+17.72 (+2.46%)</span></p>
-                  </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                  <div class="stock-item">
-                      <h3>Cisco Systems, Inc.</h3>
-                      <p>Cisco Systems, Inc., is an American multinational digital communications technology conglomerate corporation headquartered in San Jose, California. Cisco develops, manufactures, and sells networking hardware, software, telecommunications equipment and other high-technology services and products..</p>
-                      <p>$48.85 <span class="stock-change up">-1.43 (-2.84%)</span></p>
-                  </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                  <div class="stock-item">
-                      <h3>Tesla, Inc</h3>
-                      <p>Tesla, Inc. is an American multinational automotive and clean energy company headquartered in Austin, Texas, which designs, manufactures and sells electric vehicles, stationary battery energy storage devices from home to grid-scale, solar panels and solar shingles, and related products and services.</p>
-                      <p>$195.13 <span class="stock-change up">+6.42 (+3.40%)</span></p>
-                  </div>
-              </div>
-          </div>
-          <!-- Second Row (Add more rows as needed) -->
-          <div class="row">
-              <!-- Add stock items for the second row -->
-          </div>
-      </div>
-  </div>
-</div>
 
-  
-
-
-
-
-
-    
-
-    <footer class="footer bg-dark text-white pt-4 pb-2">
-
-        <div class="col-md-6 mt-md-0 mt-3">
-            <!-- Content -->
-            <h5 class="text-uppercase" >Stock Market Website</h5>
-            <p>Keeping you updated with the latest stock market trends.</p>
-          </div>
-
-
-        <div class="container">
+<section id="stocks_section">
+  <div class="container">
+    <div class="row mb-4">
+        <div class="col-12">
+            <h2 class="trending-title">Trending Stocks</h2>
+            <!-- First Row -->
             <div class="row">
-                <!-- Left aligned text links -->
-                <div class="col-md-3">
-                    <ul class="list-unstyled">
-                        <li>INVESTOR RELATIONS</li>
-                        <li>CAREERS</li>
-                        <li>MOBILE APPS</li>
-                        <li>TRUST CENTER</li>
-                        <li>CHROME EXTENSION</li>
-                    </ul>
+                <div class="col-md-3 col-sm-6">
+                    <div class="stock-item">
+                        <h3>Bitcoin USD</h3>
+                        <p>Bitcoin (BTC) is a cryptocurrency launched in 2010. Users are able to generate BTC through the process of mining. Bitcoin has a current supply of 19,628,425. The last known price of Bitcoin is 52,253.09670138 USD and is up 1.20 over the last 24 hours. It is currently trading on 10818 active market(s) with $39,651,161,335.28 traded over the last 24 hours.</p>
+                        <p>$52221.00 <span class="stock-change up">+607.80 (+1.18%)</span></p>
+                    </div>
                 </div>
-                
-                <!-- Center aligned text links -->
-                <div class="col-md-6 text-center">
-                    <ul class="list-unstyled">
-                        <li>CONTACT</li>
-                        <li>ADVERTISE</li>
-                        <li>NASDAQ MARKETSITE</li>
-                        <li>NEWSLETTERS</li>
-                    </ul>
+                <div class="col-md-3 col-sm-6">
+                    <div class="stock-item">
+                        <h3>AMAZON</h3>
+                        <p>Amazon (AMZN), a powerhouse on NASDAQ, leads in e-commerce, cloud services, and media. Its market cap fluctuates, driven by stock price changes and shares outstanding. Revenue sources include e-commerce sales, AWS, subscriptions like Amazon Prime, and advertising. Quarterly reports track key metrics like revenue growth, AWS expansion, Prime memberships, and margins.</p>
+                        <p>$739.00 <span class="stock-change up">+17.72 (+2.46%)</span></p>
+                    </div>
                 </div>
-    
-                <!-- Right aligned text links -->
-                <div class="col-md-3 text-right">
-                    <ul class="list-unstyled">
-                        <li>PRIVACY POLICY</li>
-                        <li>COOKIES</li>
-                        <li>LEGAL</li>
-                        <li>DO NOT SELL MY PERSONAL INFORMATION</li>
-                    </ul>
+                <div class="col-md-3 col-sm-6">
+                    <div class="stock-item">
+                        <h3>Cisco Systems, Inc.</h3>
+                        <p>Cisco Systems, Inc., is an American multinational digital communications technology conglomerate corporation headquartered in San Jose, California. Cisco develops, manufactures, and sells networking hardware, software, telecommunications equipment and other high-technology services and products..</p>
+                        <p>$48.85 <span class="stock-change up">-1.43 (-2.84%)</span></p>
+                    </div>
                 </div>
-    
-                <!-- Social Media Icons -->
-                <div class="col-12 text-center mt-3">
+                <div class="col-md-3 col-sm-6">
+                    <div class="stock-item">
+                        <h3>Tesla, Inc</h3>
+                        <p>Tesla, Inc. is an American multinational automotive and clean energy company headquartered in Austin, Texas, which designs, manufactures and sells electric vehicles, stationary battery energy storage devices from home to grid-scale, solar panels and solar shingles, and related products and services.</p>
+                        <p>$195.13 <span class="stock-change up">+6.42 (+3.40%)</span></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Second Row (Add more rows as needed) -->
+            <div class="row">
+                <!-- Add stock items for the second row -->
+            </div>
+        </div>
+    </div>
+  </div>  
+</section>
+
+
+
+
+
+
+
+
+
+<section id="contact_section">
+
+  <footer class="footer1">
+    <h4 class="text-italic" >STOCKIFY  </h4>
+   
+     <p>Keeping you updated with the latest stock market trends.</p>
+  
+  
+     <div class="container">
+         <div class="row">
+             <!-- Left aligned text links -->
+             <div class="col-md-3 ">
+                 <ul class="list-unstyled">
+                     <li>      <a class="nav-link" href="home.html">INVESTOR RELATIONS</a>  </li>
+                     <li>      <a class="nav-link" href="home.html">CAREERS</a>   </li>
+                     <li>      <a class="nav-link" href="home.html">MOBILE APPS</a>   </li>
+                     <li>      <a class="nav-link" href="home.html">CHROME EXTENSION</a>  </li>
+                 </ul>
+             </div>
+             
+             <!-- Center aligned text links -->
+             <div class="col-md-6 ">
+                 <ul class="list-unstyled">
+                     <li>      <a class="nav-link" href="home.html">CONTACT</a> </li>
+                     <li>      <a class="nav-link" href="home.html">ADVERTISE</a> </li>
+                     <li>      <a class="nav-link" href="home.html">NASDAQ MARKETSITE</a> </li>
+                     <li>      <a class="nav-link" href="home.html">NEWSLETTERS</a> </li>
+                 </ul>
+             </div>
+  
+             <!-- Right aligned text links -->
+             <div class="col-md-3 ">
+                 <ul class="list-unstyled">
+                     <li>      <a class="nav-link" href="home.html">PRIVACY POLICY</a> </li>
+                     <li>      <a class="nav-link" href="home.html">COOKIES</a> </li>
+                     <li>      <a class="nav-link" href="home.html">LEGAL</a> </li>
+                     <li>      <a class="nav-link" href="home.html"> TRUST CENTER</a></li>
+                     
+                 </ul>
+             </div>
+  
+                 <!-- Social Media Icons -->
+  
+                 
+  
+                  <div class="col-12 text-center mt-3">
                     <a href="https://www.facebook.com" class="social-icon">
                         <img src="logos/Facebook_Logo.png" alt="Facebook">
                     </a>
@@ -229,10 +236,19 @@
                         <img src="logos/git logo.png" alt="GitHub">
                     </a>
                 </div>
-            </div>
-        </div>
-    </footer>
+  
+                 
       
+         </div>
+     </div>
+  
+  </footer>
+</section>
+
+  
+
+
+
 
     
 </body>

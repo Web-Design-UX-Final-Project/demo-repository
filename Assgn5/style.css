@@ -1,5 +1,6 @@
 .navbar-brand img {
-    max-height: 50px;
+    /* max-height: 50px; */
+    height: 120px;
   }
 
  
@@ -11,7 +12,18 @@
     text-align: center;
   }
 
+  .hyperlink{
+    color: inherit; /* Inherit color from parent element */
+    text-decoration: underline; /* Add underline to indicate hyperlink */
+    transition: color 0.3s;
+  }
 
+
+  .hyperlink:hover{
+    transform: scale(1.2); /* Enlarge the text on hover */
+    color: #007bff; /* Change color on hover */
+    text-decoration: none; /* Remove underline on hover */
+  }
 
 
 
@@ -113,20 +125,6 @@
     }
   }
   
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -139,6 +137,87 @@
 
 
 /* Footer Styles */
+
+
+footer.footer1 ul {
+  padding: 2px;
+  margin-bottom: 20px;
+}
+
+footer.footer1 li {
+  padding: 10px 0;
+}
+
+footer.footer1 a.social-icon {
+  display: inline-block;
+  margin: 0 10px;
+  padding-bottom: 20px;
+}
+
+footer.footer1 img {
+  height: 30px; /* Set this to the desired size */
+  width: auto;
+}
+
+
+/* Style for the list item */
+footer.footer1 li {
+  line-height: 1.5;
+  font-size: 1rem;
+  color: #d6d6d6;
+}
+
+footer.footer1 h4{
+  padding-top: 15px;
+  text-align: center;
+  color: #d6d6d6;
+}
+
+footer.footer1 p{
+  
+  text-align: center;
+  color: #d6d6d6;
+}
+
+footer.footer1{
+  text-align: center;
+  background-color: #282f36e6;
+  color: #fff;
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+  footer.footer1 .col-md-3, .footer .col-md-6 {
+      text-align: center;
+      margin-bottom: 15px;
+  }
+
+  footer.footer1 .col-md-3 ul, .footer .col-md-6 ul {
+      display: inline-block;
+  }
+
+  footer.footer1 .col-md-3 text-right, .footer .col-md-6 text-center {
+      text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
 .footer {
     background-color: #000;
     color: #fff;
@@ -159,11 +238,11 @@
 }
 
 .footer a img {
-    height: 30px; /* Set this to the desired size */
+    height: 30px;
     width: auto;
 }
 
-/* For smaller screens */
+
 @media (max-width: 768px) {
     .footer .col-md-3, .footer .col-md-6 {
         text-align: center;
@@ -179,25 +258,25 @@
     }
 }
 
-/* Ensure the container takes full width */
+
 .footer .container {
     width: 100%;
     max-width: none;
 }
 
-/* Reset padding for the list */
+
 .footer ul {
     list-style-type: none;
     padding-left: 0;
 }
 
-/* Style for the list items */
+
 .footer li {
     line-height: 2.5;
     font-size: 0.9rem;
 }
 
-/* Media query adjustments for responsiveness */
+
 @media screen and (max-width: 992px) {
     .footer .col-md-3, .footer .col-md-6 {
         text-align: left;
@@ -205,7 +284,7 @@
     .footer .col-md-3 text-right, .footer .col-md-6 text-center {
         text-align: left;
     }
-}
+} */
 
 
 
